@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "微软雅黑";
+    color: #666666;
+}
+a{
+    text-decoration: none;
+}
+
+.main{
+    width: 1200px;
+    height: 460px;
+    margin: 30px auto;
+}
+/*选项卡样式*/
+.menu-items{
+    width: 25%;
+    font-size:22px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 6px;
+}
+
+.itemActive{
+    background: #ffcc00;
+}
+
+/*banner区样式*/
+.banner{
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.banner-slide{
+    width: 1200px;
+    height: 460px;
+    float: left;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.slide-active{
+    display: block;
+}
+
+.slide0{
+    background-image: url("img/1.jpg");
+}
+.slide1{
+    background-image: url("img/3.jpg");
+}
+
+.slide2{
+    background-image: url("img/4.jpg");
+}
+.slide3{
+    background-image: url("img/5.jpg");
+}
