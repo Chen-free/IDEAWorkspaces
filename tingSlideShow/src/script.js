@@ -95,11 +95,14 @@ for (var i=0;i<size;i++){
         changeImg();
     })
 }
-//鼠标进入main区，取消定时器
-EventUtil.addHandler(main,"mouseover",stopAutoPlay());
 
-//鼠标离开main区时，定时器开始
-EventUtil.addHandler(main,"mouseout",startAutoPlag());
+window.onload =function (ev) {
+    //鼠标滑入main，停止轮播
+    EventUtil.addHandler(main,"mouseover",stopAutoPlay);//引用时不需要添加（），notice
+
+//鼠标离开main，继续轮播
+    EventUtil.addHandler(main,"mouseout",startAutoPlag);
+}
 //自动轮播
 startAutoPlag();
 
